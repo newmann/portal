@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+#  base:
+#    image: beiyelin/front-base
+#    自动打包的过程，docker-compose build
+
+  projectportal:
+    image: registry.cn-hangzhou.aliyuncs.com/newmann/portal:20181028.1
+    build: .
+    environment:
+      - spring.profiles.active=prod
+    ports:
+      - 8020:8020
