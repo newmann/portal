@@ -1,8 +1,8 @@
 
 server:
   port: 8020
-
-thymeleaf:
-  mode: HTML
-  cache: false
-  prefix: classpath:/templates
+spring:
+  thymeleaf:
+    mode: HTML
+    cache: false
+    prefix: classpath:/templates
